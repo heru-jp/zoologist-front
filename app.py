@@ -50,7 +50,7 @@ body_mass_g = st.number_input(
 """
 
 import requests
-url = 'https://zoo-api-303319259140.asia-northeast1.run.app/predict'
+url = st.secrets['API_URL']
 
 if st.button("Predict Species"):
   params = {
